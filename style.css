@@ -1,0 +1,108 @@
+body {
+    margin: 0px;
+    height: 100vh;
+    text-align: center; 
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+p {
+    display: inline;
+    font-size: 5vw;
+}
+
+#clock {
+    position: relative;
+    display: inline;
+    top: 5vh;
+    margin-bottom: 5vh;
+    font-size: 15vw;
+}
+
+#sun {
+    position: absolute;
+    top: 20vh;
+    right: 4vw;
+    height: 60vw;
+}
+
+#cloud {
+    position: absolute;
+    top: 37vh;
+    right: 30vw;
+    z-index: 2;
+    width: 40vw;
+    animation: cloud 17s infinite;
+    animation-delay: 4s;
+}
+
+@keyframes cloud {
+    0% {right: 30vw;}
+    35% {right: 40vw;}
+    70% {right: 20vw;}
+    100% {right: 30vw;}
+}
+
+.day {
+    background: rgba(37,124,255,1);
+    background: linear-gradient(1deg, rgba(225,247,255,1) 0%, rgba(136,209,244,1) 11%, rgba(37,124,255,1) 83%);
+}
+
+.sunset, .sunrise {
+    background: rgb(234,136,71);
+    background: linear-gradient(1deg, rgba(234,136,71,1) 0%, rgba(144,111,100,1) 25%, rgba(68,90,125,1) 70%);
+}
+
+.night {
+    background: rgba(4,17,37,1);
+    background: linear-gradient(-1deg, rgba(117,117,117,1) 0%, rgba(51,60,61,1) 12%, rgba(4,17,37,1) 100%);
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    #sun {
+        height: 40vw;
+        right: 10vw;
+        top: 25vh;
+    }
+
+    #cloud {
+        width: 28vw;
+        right: 30vw;
+        top: 40vh;
+    }
+
+    #clock {
+        font-size: 13vw;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #sun {
+        height: 42vh;
+        right: 10vw;
+        top: 25vh;
+    }
+
+    #cloud {
+        width: 26vh;
+        right: 22vw;
+        top: 46vh;
+    }
+
+    #clock {
+        font-size: 10vh;
+    }
+
+    p {
+        font-size: 4vh;
+    }
+
+    @keyframes cloud {
+        0% {right: 22vw;}
+        35% {right: 26vw;}
+        70% {right: 18vw;}
+        100% {right: 22vw;}
+    }
+}
