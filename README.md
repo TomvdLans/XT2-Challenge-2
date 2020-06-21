@@ -14,4 +14,4 @@ Om de astronauten op te vrolijken en een beter besef van de aardse tijd te geven
 
 Ik ben begonnen met brainstormen voor een ontwerp. Toen ik blij was met het idee ben ik het uit gaan werken in Figma. Toen ik hier tevreden mee was, ben ik in Visual Studio Code aan de slag gegaan met coderen. Het coderen was met behulp van onder ander W3Schools en Stackoverflow goed te doen. Het animeren in CSS en het veranderen van de achtergrond op basis van tijd was een logisch proces.
 
-> Een afbeelding van alle dagdelen is te vinden in het bestand "timeofdays" in de image folder.
+> Een afbeelding van alle dagdelen is te vinden in het bestand "timeofdays" in de images folder.
